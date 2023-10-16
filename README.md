@@ -1,6 +1,6 @@
 # Marketplace
 
-This is a marketplace project built with Next.js, TypeScript, Shadcn UI, and Tailwind CSS.
+This is a marketplace to but why you need from the confort of your home.
 
 ## Getting started
 
@@ -17,7 +17,8 @@ Once the dependencies are installed, you can start the development server:
 ```bash
 npm run dev
 ```
-The development server will start on port 3000. You can open the application in your browser by visiting http://localhost:3000.
+
+The development server will start on port 3000. You can open the application in your browser by visiting <http://localhost:3000>.
 
 ## Features
 
@@ -26,7 +27,7 @@ This marketplace project includes the following features:
 - Product listing and details pages
 - Shopping cart
 
-Deployment
+## Deployment
 
 To deploy the application to production, you can use a service such as Vercel or Netlify.
 
