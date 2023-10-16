@@ -10,6 +10,7 @@ import {
   PersonFill,
   ShoppingCartFill,
 } from "./icons";
+import { Navbar } from "./navbar";
 import { SearchBar } from "./search-bar";
 
 type Props = {};
@@ -35,6 +36,8 @@ export const Header = (props: Props) => {
           ))}
         </div>
       </div>
+
+      <Navbar />
     </div>
   );
 };

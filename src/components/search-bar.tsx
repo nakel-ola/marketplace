@@ -13,9 +13,9 @@ export const SearchBar = (props: Props) => {
       />
       <div className="gap-2 flex items-center px-2 border-l-2 border-primary">
         <p className="">All category</p>
-        <ExpandMore className="h-[25px] w-[25px]" />
+        <ExpandMore className="h-[24px] w-[24px] text-gray-500" />
       </div>
-      <Button className="rounded-none">Search</Button>
+      <Button className="rounded-none h-full">Search</Button>
     </div>
   );
 };
