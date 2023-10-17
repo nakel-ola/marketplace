@@ -17,7 +17,7 @@ type Props = {};
 export const Header = (props: Props) => {
   return (
     <div className="bg-white">
-      <div className="w-full page-center px-5  lg:px-10 py-3 flex justify-between items-center">
+      <div className="w-full page-center px-5 lg:px-10 py-3 flex justify-between items-center">
         <Link href="/" className="w-[150px] h-[46px]">
           <img src="/logo-colored.svg" alt="" className="" />
         </Link>
