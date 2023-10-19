@@ -10,6 +10,7 @@ const buttonVariants = cva(
         default: "bg-primary text-slate-50 shadow hover:bg-primary/90",
         destructive:
           "bg-red-500 text-slate-50 shadow-sm hover:bg-red-500/90 dark:bg-red-900 dark:text-slate-50 dark:hover:bg-red-900/90",
+        gradient: "bg-primary-gradient text-white",
         outline:
           "border border-slate-200 bg-transparent shadow-sm hover:bg-slate-100 hover:text-slate-900 dark:border-slate-800 dark:hover:bg-slate-800 dark:hover:text-slate-50",
         secondary:

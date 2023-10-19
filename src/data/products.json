@@ -1,0 +1,68 @@
+[
+  {
+    "image": "/images/a2d288ce5bd52ddfac2945120df5102b.png",
+    "name": "Original Apple iPhone 12 Mini 5G LTE Cellphone",
+    "price": "$998.00",
+    "discountPrice": "$1128.00",
+    "isShippingFree": true,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "totalOrder": 154,
+    "rating": 7.5
+  },
+  {
+    "image": "/images/26e944afe4e9b344a9d08d2cdf13f6ac.png",
+    "name": "Xiaomi Redmi 12C Global Version 3GB",
+    "price": "$249.99",
+    "discountPrice": "$330",
+    "isShippingFree": true,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "totalOrder": 154,
+    "rating": 7.5
+  },
+  {
+    "image": "/images/5b845d5b649289426578b53ebaef4c65.png",
+    "name": "Samsung Galaxy Tab S7 FE WiFi Tablet Snapdragon",
+    "price": "$998.00",
+    "isShippingFree": true,
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit",
+    "totalOrder": 154,
+    "rating": 7.5
+  },
+  {
+    "image": "/images/iphone13.jpg",
+    "name": "Apple Iphone 13 Pro max Smartphone 256GB Black color",
+    "price": "$899.50",
+    "isShippingFree": true,
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit ",
+    "totalOrder": 154,
+    "rating": 7.5
+  },
+  {
+    "image": "/images/67d46067797d63f72c5d238bab2c834f.png",
+    "name": "HP Laptop Computer 15.6' 512GB SSD Win11 Intel",
+    "price": "$998.00",
+    "isShippingFree": true,
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit ",
+    "totalOrder": 154,
+    "rating": 7.5
+  },
+  {
+    "image": "/images/e4b654e7de1ac596c31da4b9f1994793.png",
+    "name": "Apple Watch Series 6 (GPS + Cellular, 40mm) - Space Gray",
+    "price": "$178.00",
+    "discountPrice": "$209.00",
+    "isShippingFree": true,
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit ",
+    "totalOrder": 154,
+    "rating": 7.5
+  },
+  {
+    "image": "/images/db935c4b51e951193ddd1064f61e7b77.png",
+    "name": "Peakfun Wireless Headphones Over-Ear Bluetooth Adjustable Headphones",
+    "price": "$39.90",
+    "isShippingFree": true,
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit ",
+    "totalOrder": 154,
+    "rating": 7.5
+  }
+]

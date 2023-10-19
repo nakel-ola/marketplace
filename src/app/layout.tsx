@@ -1,7 +1,8 @@
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
+import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -58,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className, "flex flex-col justify-center")}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

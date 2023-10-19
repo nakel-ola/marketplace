@@ -1,17 +1,25 @@
+import { nextui } from "@nextui-org/react";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
+    },
     extend: {
       colors: {
         dark: "#1C1C1C",
         primary: {
           DEFAULT: "#0D6EFD",
+          100: "#AFD0FF",
           200: "#E3F0FF",
         },
         green: {
@@ -32,6 +40,7 @@ const config: Config = {
           400: "#BDC4CD",
           500: "#8B96A5",
           600: "#505050",
+          800: "#606060",
         },
       },
       fontSize: {
@@ -41,12 +50,24 @@ const config: Config = {
       },
       backgroundImage: {
         "primary-gradient": "linear-gradient(180deg, #127FFF 0%, #0067FF 100%)",
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        warehouse: "url('/images/bg-warehouse.jpg')",
+      },
+      keyframes: {
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },
-  plugins: [],
+  plugins: [nextui(), require("tailwindcss-animate")],
 };
 export default config;

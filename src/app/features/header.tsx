@@ -2,14 +2,17 @@
 import Link from "next/link";
 import React from "react";
 import {
-  Favorite,
   FavoriteFill,
-  Message,
+  Menu,
   MessageFill,
   Person,
   PersonFill,
+  ShoppingCart,
   ShoppingCartFill,
-} from "./icons";
+} from "../../components/icons";
+import { IconButton } from "../../components/ui/icon-button";
+import { MobileSearchBar } from "./mobile-search-bar";
+import { MobileMenu } from "./mobile-tabs";
 import { Navbar } from "./navbar";
 import { SearchBar } from "./search-bar";
 
@@ -17,14 +20,20 @@ type Props = {};
 export const Header = (props: Props) => {
   return (
     <div className="bg-white">
-      <div className="w-full page-center px-5 lg:px-10 py-3 flex justify-between items-center">
-        <Link href="/" className="w-[150px] h-[46px]">
-          <img src="/logo-colored.svg" alt="" className="" />
-        </Link>
+      <div className="page-center w-[calc(100%-10px)] lg:w-[calc(100%-80px)] py-3 flex justify-between items-center">
+        <div className="flex">
+          <IconButton className="lg:hidden">
+            <Menu className="h-8 w-8 text-dark" />
+          </IconButton>
+
+          <Link href="/" className="w-[150px] h-[40px]">
+            <img src="/logo-colored.svg" alt="" className="h-full w-full" />
+          </Link>
+        </div>
 
         <SearchBar />
 
-        <div className="flex gap-5">
+        <div className="hidden lg:flex gap-5">
           {items.map(({ Icon, label }, index) => (
             <button
               key={index}
@@ -35,7 +44,20 @@ export const Header = (props: Props) => {
             </button>
           ))}
         </div>
+
+        <div className="flex lg:hidden gap-5">
+          <IconButton>
+            <ShoppingCart className="h-8 w-8 text-dark" />
+          </IconButton>
+          <IconButton>
+            <Person className="h-8 w-8 text-dark" />
+          </IconButton>
+        </div>
       </div>
+
+      <MobileSearchBar />
+
+      <MobileMenu />
 
       <Navbar />
     </div>

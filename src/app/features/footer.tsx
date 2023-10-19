@@ -10,8 +10,8 @@ import {
   LinkedIn,
   Twitter,
   Youtube,
-} from "./icons";
-import { Button } from "./ui/button";
+} from "../../components/icons";
+import { Button } from "../../components/ui/button";
 
 type Props = {};
 export const Footer = (props: Props) => {
@@ -20,8 +20,8 @@ export const Footer = (props: Props) => {
       {/* company */}
 
       <div className="bg-white">
-        <div className="px-5 lg:px-10 page-center py-10 flex justify-between ">
-          <div className="space-y-4">
+        <div className="px-5 lg:px-10 page-center py-10 flex flex-col lg:flex-row justify-between gap-10">
+          <div className="space-y-4 shrink-0">
             <Link href="/" className="w-[150px] h-[46px]">
               <img src="/logo-colored.svg" alt="" className="" />
             </Link>
@@ -40,32 +40,32 @@ export const Footer = (props: Props) => {
             </div>
           </div>
 
-          {/* navigations */}
+          <div className="grid gap-5 grid-cols-2 lg:grid-cols-5 mt-10 lg:mt-0">
+            {navigations.map(({ items, title }, index) => (
+              <div key={index} className="flex flex-col">
+                <p className="text-base font-medium pb-3">{title}</p>
+                {items.map(({ label, href }, i) => (
+                  <Link key={i} href={href} className="text-gray-500 py-2">
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            ))}
 
-          {navigations.map(({ items, title }, index) => (
-            <div key={index} className="flex flex-col">
-              <p className="text-base font-medium pb-3">{title}</p>
-              {items.map(({ label, href }, i) => (
-                <Link key={i} href={href} className="text-gray-500 py-2">
-                  {label}
-                </Link>
-              ))}
+            <div className="flex flex-col">
+              <p className="text-base font-medium pb-3">Get app</p>
+
+              <DownloadButton
+                Icon={Apple}
+                title="Download on the"
+                storeName="App Store"
+              />
+              <DownloadButton
+                Icon={GooglePlayStore}
+                title="GET IT ON"
+                storeName="Google Play"
+              />
             </div>
-          ))}
-
-          <div className="flex flex-col">
-            <p className="text-base font-medium pb-3">Get app</p>
-
-            <DownloadButton
-              Icon={Apple}
-              title="Download on the"
-              storeName="App Store"
-            />
-            <DownloadButton
-              Icon={GooglePlayStore}
-              title="GET IT ON"
-              storeName="Google Play"
-            />
           </div>
         </div>
       </div>
@@ -95,11 +95,13 @@ type DownloadButtonProps = {
 
 const DownloadButton = ({ Icon, storeName, title }: DownloadButtonProps) => {
   return (
-    <div className="flex items-center p-2 px-4 gap-5 rounded-lg bg-dark my-2 cursor-pointer">
-      <Icon className="text-white h-8 w-8" />
+    <div className="flex items-center p-1 px-4 gap-5 rounded-lg bg-dark my-2 cursor-pointer">
+      <Icon className="text-white h-6 w-6" />
       <div className="flex flex-col items-start">
-        <span className="text-white text-sm">{title}</span>
-        <span className="text-white font-bold text-xl">{storeName}</span>
+        <span className="text-white text-[12px] whitespace-nowrap">
+          {title}
+        </span>
+        <span className="text-white font-bold text-sm">{storeName}</span>
       </div>
     </div>
   );
