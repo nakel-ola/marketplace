@@ -143,7 +143,7 @@ const FavoriteButton = () => {
       onClick={() => setIsFavourite(!isFavourite)}
       className="h-[40px] w-[40px] rounded-md border border-gray-300 [box-shadow:_0px_1px_2px_0px_rgba(56,_56,_56,_0.08)] flex items-center justify-center shrink-0"
     >
-      <Favorite
+      <FavoriteFill
         className={cn(
           "h-6 w-6",
           isFavourite ? "text-primary" : "text-gray-300"

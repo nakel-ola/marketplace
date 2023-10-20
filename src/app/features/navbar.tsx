@@ -7,13 +7,19 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import React, { Fragment, useState } from "react";
 import { ExpandMore, Menu } from "../../components/icons";
+
+const blacklist = ["/cart"];
 
 type Props = {};
 export const Navbar = (props: Props) => {
   const router = useRouter();
+
+  const pathname = usePathname();
+  if (blacklist.some((value) => pathname.startsWith(value)))
+    return <Fragment />;
   return (
     <div className="page-center w-[calc(100%-10px)] lg:w-[calc(100%-80px)] py-1 border-y border-gray-300 hidden lg:flex justify-between items-center">
       <div className="space-x-8 flex items-center">

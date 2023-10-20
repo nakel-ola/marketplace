@@ -1,4 +1,5 @@
 export { default as Apple } from "./apple";
+export { default as Checkmark } from "./checkmark";
 export { default as ExpandLess } from "./expand-less";
 export { default as ExpandMore } from "./expand-more";
 export { default as Facebook } from "./facebook";
@@ -25,5 +26,6 @@ export { default as ShoppingCartFill } from "./shopping-cart-fill";
 export { default as Star } from "./star";
 export { default as StarFill } from "./star-fill";
 export { default as Twitter } from "./twitter";
+export { default as VerifiedUser } from "./verified-user";
 export { default as Youtube } from "./youtube";
-export { default as Checkmark } from "./checkmark";
+export { default as Language } from "./language";

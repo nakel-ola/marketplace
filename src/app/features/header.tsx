@@ -34,14 +34,13 @@ export const Header = (props: Props) => {
         <SearchBar />
 
         <div className="hidden lg:flex gap-5">
-          {items.map(({ Icon, label }, index) => (
-            <button
-              key={index}
-              className="text-gray-500 flex items-center justify-center flex-col"
-            >
-              <Icon className="h-[20px] w-[20px]" />
-              <span className="text-xs">{label}</span>
-            </button>
+          {items.map(({ Icon, label, href = "#" }, index) => (
+            <Link key={index} href={href}>
+              <button className="text-gray-500 flex items-center justify-center flex-col">
+                <Icon className="h-[20px] w-[20px]" />
+                <span className="text-xs">{label}</span>
+              </button>
+            </Link>
           ))}
         </div>
 
@@ -80,5 +79,6 @@ const items = [
   {
     Icon: ShoppingCartFill,
     label: "My Cart",
+    href: "/cart",
   },
 ];

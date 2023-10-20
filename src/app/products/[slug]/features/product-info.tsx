@@ -8,10 +8,10 @@ import { ProductCard } from "./product-card";
 type Props = {};
 export const ProductInfo = (props: Props) => {
   return (
-    <div className="flex gap-3 my-2 flex-col lg:flex-row">
+    <div className="flex gap-3 my-5 flex-col lg:flex-row">
       <Tabs
         defaultValue="description"
-        className="flex-1 bg-white border border-gray-300 rounded-md"
+        className="flex-1 bg-white border border-gray-300 rounded-md h-fit"
       >
         <TabsList className="grid w-full grid-cols-4 lg:grid-cols-7">
           <TabsTrigger value="description">Description</TabsTrigger>
@@ -21,6 +21,9 @@ export const ProductInfo = (props: Props) => {
         </TabsList>
 
         <DescriptionCard />
+        <ReviewsCard />
+        <ShippingCard />
+        <AboutSellerCard />
       </Tabs>
 
       <RelatedCard />
@@ -52,6 +55,46 @@ const DescriptionCard = () => {
           </div>
         ))}
       </div>
+    </TabsContent>
+  );
+};
+
+const ReviewsCard = () => {
+  return (
+    <TabsContent value="reviews" className="p-5">
+      <p className="text-black font-medium text-base">Reviews</p>
+      <p className="text-gray-600 text-base font-normal pt-2">
+        Culpa reprehenderit, nam doloribus possimus sapiente quo cumque maxime
+        rerum. Sit repellat nisi consequuntur assumenda, ipsam ab aut hic sint
+        laboriosam tempore!
+      </p>
+    </TabsContent>
+  );
+};
+
+const ShippingCard = () => {
+  return (
+    <TabsContent value="shipping" className="p-5">
+      <p className="text-black font-medium text-base">Shipping information</p>
+      <p className="text-gray-600 text-base font-normal pt-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+        reprehenderit, nam doloribus possimus sapiente quo cumque maxime rerum.
+        Sit repellat nisi consequuntur assumenda, ipsam ab aut hic sint
+        laboriosam tempore!
+      </p>
+    </TabsContent>
+  );
+};
+
+const AboutSellerCard = () => {
+  return (
+    <TabsContent value="about-seller" className="p-5">
+      <p className="text-black font-medium text-base">About seller</p>
+      <p className="text-gray-600 text-base font-normal pt-2">
+        Seller Culpa reprehenderit, nam doloribus possimus sapiente quo cumque
+        maxime rerum. Sit repellat nisi consequuntur assumenda, ipsam ab aut hic
+        sint laboriosam tempore!
+      </p>
     </TabsContent>
   );
 };

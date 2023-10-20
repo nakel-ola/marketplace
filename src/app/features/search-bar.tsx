@@ -1,9 +1,16 @@
-import React from "react";
+"use client"
+import { usePathname } from "next/navigation";
+import React, { Fragment } from "react";
 import { ExpandMore } from "../../components/icons";
 import { Button } from "../../components/ui/button";
 
+const blacklist = ["/cart"];
+
 type Props = {};
 export const SearchBar = (props: Props) => {
+  const pathname = usePathname();
+  if (blacklist.some((value) => pathname.startsWith(value)))
+    return <Fragment />;
   return (
     <div className="hidden lg:flex flex-[0.8] border-2 border-primary rounded-md h-[40px]">
       <input
@@ -15,7 +22,9 @@ export const SearchBar = (props: Props) => {
         <p className="">All category</p>
         <ExpandMore className="h-[24px] w-[24px] text-gray-500" />
       </div>
-      <Button className="rounded-none h-full bg-primary-gradient">Search</Button>
+      <Button className="rounded-none h-full bg-primary-gradient">
+        Search
+      </Button>
     </div>
   );
 };
