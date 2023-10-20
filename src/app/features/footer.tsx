@@ -95,8 +95,8 @@ type DownloadButtonProps = {
 
 const DownloadButton = ({ Icon, storeName, title }: DownloadButtonProps) => {
   return (
-    <div className="flex items-center p-1 px-4 gap-5 rounded-lg bg-dark my-2 cursor-pointer">
-      <Icon className="text-white h-6 w-6" />
+    <div className="flex items-center p-1 px-4 gap-3 rounded-lg bg-dark my-2 cursor-pointer">
+      <Icon className="text-white h-6 w-6 shrink-0" />
       <div className="flex flex-col items-start">
         <span className="text-white text-[12px] whitespace-nowrap">
           {title}

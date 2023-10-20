@@ -1,0 +1,38 @@
+{
+  "name": "Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle",
+  "type": "Classic  shoes",
+  "stock": 5,
+  "material": "Plastic material",
+  "design": "Modern nice",
+  "customization": "Customized logo and design custom packages",
+  "protection": "Refund Policy",
+  "warranty": "2 years full warranty",
+  "rating": 9.3,
+  "totalSold": "154",
+  "totalReview": "32 reviews",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  "model": "#8786867",
+  "style": "Classic style",
+  "certificate": "ISO-898921212",
+  "size": "34mm x 450mm x 19mm",
+  "memory": "36GB RAM",
+
+  "content": [
+    "Some great feature name here",
+    "Lorem ipsum dolor sit amet, consectetur ",
+    "Duis aute irure dolor in reprehenderit",
+    "Some great feature name here"
+  ],
+  "supplier": {
+    "name": "Guanjoi Trading LLC",
+    "location": "Germany, Berlin",
+    "verified": true,
+    "worldwide": true
+  },
+  "images": [
+    "/images/ba64362f07075659795d0e6c24963920.jpeg",
+    "/images/0b669765823c4c4c5af81ab06e2a1158.jpeg",
+    "/images/62c57b197df41225b5846b233d3a1058.jpeg",
+    "/images/9f3dac9e0b97dd076154a67e0ea941a5.jpeg"
+  ]
+}

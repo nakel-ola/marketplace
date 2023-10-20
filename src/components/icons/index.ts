@@ -26,3 +26,4 @@ export { default as Star } from "./star";
 export { default as StarFill } from "./star-fill";
 export { default as Twitter } from "./twitter";
 export { default as Youtube } from "./youtube";
+export { default as Checkmark } from "./checkmark";
