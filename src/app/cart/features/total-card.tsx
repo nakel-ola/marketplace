@@ -4,7 +4,7 @@ import React from "react";
 type Props = {};
 export const TotalCard = (props: Props) => {
   return (
-    <div className="w-[320px] shrink-0 space-y-3">
+    <div className="lg:w-[320px] shrink-0 space-y-3">
       <div className=" bg-white border border-gray-300 rounded-md p-3">
         <p className="">Have a coupon?</p>
 
