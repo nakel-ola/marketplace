@@ -10,7 +10,7 @@ export default function Cart() {
       <main className="w-[calc(100%-10px)] lg:w-[calc(100%-80px)] page-center">
         <p className="text-dark text-2xl font-semibold py-4">My cart (3)</p>
 
-        <div className="flex gap-3">
+        <div className="flex flex-col lg:flex-row gap-3">
           <ProductsCard />
           <TotalCard />
         </div>
